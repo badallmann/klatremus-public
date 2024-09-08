@@ -8,7 +8,7 @@ Inspired by: Classic weblogs, Tumblr blogs with themes, independent photography 
 Target platform: Web – mobile, social media app browsers and desktop. 
 Hosting: AWS S3, CloudFront. 
 Backend: Firebase. 
-Lang: Vanilje JS, custom libs. 
+Lang: Vanilla JS, custom libs.
 Architecture: MVC, pub-sub with constant topics for coupling. 
 
 'Klatremus' (climbing mouse) is current project iteration.
