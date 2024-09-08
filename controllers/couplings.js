@@ -1,7 +1,7 @@
 import { sub }    from "/shared/pubsub.js";
 import { TOPICS } from "/shared/constants.js";
 import { authentication } from "/models/authentication.js";
-import { menu } from "/views/menu.js";
+import { menu }   from "/views/menu.js";
 
 export function coupleTopics() {
   // Shorthand: Event to menuPage

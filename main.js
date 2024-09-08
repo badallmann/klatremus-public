@@ -3,7 +3,7 @@ import { css } from "/shared/misc.js";
 import { init } from "/controllers/init.js";
 import { testWithSubdomain } from "/controllers/landing.js";
 
-window.onload = async function() {
+window.onload = function() {
   addStylesheets();
   css(`
     :root { 

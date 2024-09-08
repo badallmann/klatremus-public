@@ -1,6 +1,6 @@
 import { html } from "/shared/html.js";
-import { halvorhansen } from "/tests/halvorhansen.js";
 import { menu } from "/views/menu.js";
+import { halvorhansen } from "/tests/halvorhansen.js";
 
 let urlDetails = null;
 
