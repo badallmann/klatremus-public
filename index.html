@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="white" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="black" media="(prefers-color-scheme: dark)">
+  
+  <!-- TODO: Import meta tags from archive/index-pre-klatremus.html -->
+
+  <title>Snublr</title>
+  
+  <!-- Set base URL if production environment -->
+  <script>
+    (function() {
+      const domainWithTLD = location.hostname.split('.').slice(-2).join('.');
+      if (domainWithTLD === 'snublr.net') {
+        const baseTag = document.createElement('base');
+        baseTag.href = 'https://klatremus.web.app/';
+        document.head.appendChild(baseTag);
+      }
+    })();
+  </script
+</head>
+<body>
+    <script src="/main.js" type="module"></script>
+</body>
+</html>

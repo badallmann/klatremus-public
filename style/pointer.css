@@ -1,0 +1,13 @@
+/* cursor, pointer-events, user-select */
+
+/* Apply no selection to all elements */
+* {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Allow text selection inside input fields */
+input, textarea, select {
+  user-select: text;
+  -webkit-user-select: text;
+}
