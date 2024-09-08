@@ -1,5 +1,6 @@
-import { html } from "/shared/html.js";
-import { menu } from "/views/menu.js";
+import { html }  from "/shared/html.js";
+import { title } from "/views/title.js";
+import { menu }  from "/views/menu.js";
 import { halvorhansen } from "/tests/halvorhansen.js";
 
 let urlDetails = null;
@@ -46,7 +47,7 @@ function handleSubdomain() {
 
 function service() {
   console.log('Rendering service page');
-  document.body.appendChild(html.create('h1', {}, 'Snublr'));
+  title()
   menu.show();
 }
 
