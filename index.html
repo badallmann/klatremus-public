@@ -9,20 +9,31 @@
   <!-- TODO: Import meta tags from archive/index-pre-klatremus.html -->
 
   <title>Snublr</title>
+
+  <!-- Specify dark mode ASAP -->
+  <style>
+    @media (prefers-color-scheme: dark) {
+      html {
+        background-color: black;
+      }
+    }
+  </style>
   
   <!-- Set base URL if production environment -->
   <script>
-    (function() {
-      const domainWithTLD = location.hostname.split('.').slice(-2).join('.');
-      if (domainWithTLD === 'snublr.net') {
-        const baseTag = document.createElement('base');
-        baseTag.href = 'https://klatremus.web.app/';
-        document.head.appendChild(baseTag);
-      }
-    })();
-  </script
+    location.hostname.endsWith('snublr.net') && 
+    document.head.appendChild(Object.assign(document.createElement('base'), { href: 'https://klatremus.web.app/' }));
+    // (function() {
+    //   const domainWithTLD = location.hostname.split('.').slice(-2).join('.');
+    //   if (domainWithTLD === 'snublr.net') {
+    //     const baseTag = document.createElement('base');
+    //     baseTag.href = 'https://klatremus.web.app/';
+    //     document.head.appendChild(baseTag);
+    //   }
+    // })();
+  </script>
 </head>
 <body>
-    <script src="/main.js" type="module"></script>
+  <script src="/main.js" type="module" defer></script>
 </body>
 </html>

@@ -1,13 +1,17 @@
 /* default before styling */
 /* main: appearance: none; or all: initial; or unset; */
 
+:root {
+  --example_variable: 0;
+}
+
 * {
   margin: 0;
   border: 0;
   padding: 0;
 }
 
-:root {
+html {
   /* prevent zoom on double tap */
   font-size: 16px;
   /* fix text sizing in landscape rotation */
