@@ -2,7 +2,7 @@ Hello!
 
 I'm building a web 2.0 blogging platform since 2018 :P 
 
-The problem I'm trying to solve is to create the first mobile-editable && open web publishable multimedia blog platform. No platform overhead like the current state of Tumblr, VSCO. May be integrated with existing social media apps as a link-in-bio site, showcasing extended content. 
+The first 100% mobile && open web publishable multimedia blog platform. No platform overhead like the current state of Tumblr, VSCO. May be integrated with existing social media apps as a link-in-bio site. Showcase extended content. 
 
 Inspired by: Classic weblogs, Tumblr blogs with themes, independent photography portfolio websites, linktrees, but also the note taking app Obsidian (accumulative writing and structuring of blog pages). 
 
