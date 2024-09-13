@@ -14,6 +14,6 @@ Stack: AWS S3 & CloudFront, Firebase, client side vanilla JS, custom libs.
 
 Architecture: Serverless SPA. MVC, pub-sub with constant topics for coupling. 
 
-'Klatremus' (climbing mouse) is current project iteration.
+"Klatremus" ("climbing mouse") is current project iteration.
 
 Currently launched @ snublr.net
