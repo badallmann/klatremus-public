@@ -14,7 +14,7 @@ Target platform: Web – Mobile, desktop and social media app browsers.
 
 Stack: AWS S3 & CloudFront, Firebase, client side vanilla JS, custom libs.
 
-Architecture: MVC, pub-sub with constant topics for coupling. 
+Architecture: Serverless SPA. MVC, pub-sub with constant topics for coupling. 
 
 'Klatremus' (climbing mouse) is current project iteration.
 
