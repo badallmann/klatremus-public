@@ -16,4 +16,4 @@ Architecture: Serverless SPA. MVC, pub-sub with constant topics for coupling.
 
 "Klatremus" ("climbing mouse") is current project iteration.
 
-Currently launched @ snublr.net
+Currently launched as indev test site @ snublr.net
