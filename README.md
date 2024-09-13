@@ -8,11 +8,11 @@ In the marketplace:
 - No platform overhead when publishing, unlike social media
 - Dead simple setup, editing and social features, unlike website generators
 
-Inspired by: Classic weblogs, Tumblr blogs with themes, independent photography portfolio websites, linktrees, but also the note taking app Obsidian (accumulative writing and structuring of blog pages). 
+Inspired by: Classic weblogs, Tumblr blogs with themes, independent photography portfolio websites, linktrees, the note taking app Obsidian (accumulative writing and structuring of pages). 
 
-Target platform: Web – mobile, social media app browsers and desktop. 
+Target platform: Web – Mobile, desktop and social media app browsers. 
 
-Stack: AWS S3 & CloudFront, Firebase, client side vanilla JS, all custom minimalist libs.
+Stack: AWS S3 & CloudFront, Firebase, client side vanilla JS, custom libs.
 
 Architecture: MVC, pub-sub with constant topics for coupling. 
 
