@@ -1,6 +1,6 @@
 Hei!
 
-I am building a web 2.0 blogging platform since 2018 rip :P
+I am building a web 2.0 blogging platform since 2018 rip:P
 
 The first cross-device && open web publishable multimedia blog platform. Integrates with existing social media as a link-in-bio site. Showcase extended content beyond current online presence. 
 
