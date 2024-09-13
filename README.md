@@ -2,7 +2,7 @@ Hello!
 
 I'm building a web 2.0 blogging platform since 2018 :P 
 
-The first 100% mobile && open web publishable multimedia blog platform. May be integrated with existing social media apps as a link-in-bio site. Showcase extended content. 
+The first cross-device && open web publishable multimedia blog platform. May be integrated with existing social media apps as a link-in-bio site. Showcase extended content. 
 
 In the marketplace:
 - No platform overhead when publishing, unlike social media
