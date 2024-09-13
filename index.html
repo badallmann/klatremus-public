@@ -21,16 +21,11 @@
   
   <!-- Set base URL if production environment -->
   <script>
-    location.hostname.endsWith('snublr.net') && 
-    document.head.appendChild(Object.assign(document.createElement('base'), { href: 'https://klatremus.web.app/' }));
-    // (function() {
-    //   const domainWithTLD = location.hostname.split('.').slice(-2).join('.');
-    //   if (domainWithTLD === 'snublr.net') {
-    //     const baseTag = document.createElement('base');
-    //     baseTag.href = 'https://klatremus.web.app/';
-    //     document.head.appendChild(baseTag);
-    //   }
-    // })();
+    location.hostname.endsWith('snublr.net') &&
+    document.head.appendChild(Object.assign(
+      document.createElement('base'), 
+      { href: 'https://klatremus.web.app/' }
+    ));
   </script>
 </head>
 <body>
