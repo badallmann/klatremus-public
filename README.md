@@ -1,6 +1,6 @@
 Hei!
 
-I am building a web 2.0 blogging platform since 2018. Rip :P
+I am building a web 2.0 blogging platform since 2018 rip :P
 
 Inspired by: Classic weblogs, Tumblr blogs with themes, independent photography portfolio websites, linktrees, the note taking app Obsidian (accumulative writing and structuring of pages). 
 
