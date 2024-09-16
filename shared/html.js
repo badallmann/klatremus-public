@@ -55,13 +55,11 @@ export const html = {
   
 
   // Menu page elements
-  pubButton(text, topic) {
+  pubButton(text, topic, payload) {
     const b = create('button', {}, [text]);
-    
     b.addEventListener('click', e => {
-      pub(topic, {
-        clickData: e
-      });
+      const data = Object.assign({}, e, payload);
+      pub(topic, data);
     });
 
     return b;

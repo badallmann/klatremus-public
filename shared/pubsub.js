@@ -61,3 +61,13 @@ export function unsub(...tokens) {
 export function inspect() {
   return subscriptions;
 }
+
+// Function to bounce from one topic to another
+export function bounce(subTopic, pubTopic) {
+  // Subscribe to the subTopic
+  sub(subTopic, (data) => {
+    console.log(`Bouncing from ${subTopic} to ${pubTopic} with data`, data);
+    // When a message is received on subTopic, publish it to pubTopic
+    pub(pubTopic, data);
+  });
+}
