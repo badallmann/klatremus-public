@@ -21,38 +21,38 @@ const pages = {
   },
   signIn() {
     return [
+      backBtn(),
       html.p('Sign in:'),
       html.form(TOPICS.SUBMIT_SIGN_IN, [
         html.emailInput(),
         html.passwordInput(),
         html.submitButton('Submit')
       ]),
-      backBtn()
     ];
   },
   createUser() {
     return [
+      backBtn(),
       html.p('Create user:'),
       html.form(TOPICS.SUBMIT_CREATE_USER, [
         html.emailInput(),
         html.passwordInputStopAutocomplete(),
         html.submitButton('Submit')
-      ]),
-      backBtn()
+      ])
     ];
   },
   errorSigningIn() {
     return [
+      backBtn(),
       html.p('Error:'),
       html.p('Something went wrong. Please try again.'),
-      backBtn()
     ];
   },
   errorCreatingUser() {
     return [
+      backBtn(),
       html.p('Error:'),
       html.p('Something went wrong. Please try again.'),
-      backBtn()
     ];
   },
   signedIn() {
@@ -64,17 +64,16 @@ const pages = {
   },
   settings() {
     return [
+      backBtn(),
       html.p('Settings:'),
       navBtn('Delete user…', menu.pages.askConfirmDeleteUser),
-      backBtn()
     ]
   },
   askConfirmDeleteUser() {
     return [
+      backBtn(),
       html.p('Delete user:'),
       html.p('Are you sure?'),
-      backBtn(),
-      html.br(),
       html.pubButton('Confirm delete user', TOPICS.DELETE_USER)
     ]
   }

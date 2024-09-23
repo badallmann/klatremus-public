@@ -6,14 +6,10 @@ import { testWithSubdomain } from "/controllers/landing.js";
 window.onload = function() {
   addStylesheets();
   css(`
-    :root { 
-      font-size: 20px;
-    }
-      
-    h1, .menu {
+    body { 
+      font-size: 22px;
       font-family: monospace;
     }
-   
   `);
   init();
 }

@@ -52,6 +52,12 @@ export const html = {
   strong(...nodes) {
     return create('strong', {}, nodes);
   },
+
+
+  // Media
+  img(src, alt = '', attributes = {}) {
+    return create('img', { src, alt, ...attributes });
+  },
   
 
   // Menu page elements
