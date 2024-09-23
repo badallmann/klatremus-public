@@ -1,7 +1,10 @@
 import { html }  from "/shared/html.js";
 import { title } from "/views/title.js";
 import { menu }  from "/views/menu.js";
+
+// Temp
 import { halvorhansen } from "/tests/halvorhansen.js";
+import { baslak } from "/tests/baslak.js";
 
 let urlDetails = null;
 
@@ -22,7 +25,7 @@ function renderSubdomainContent(subdomain) {
   
   switch (subdomain) {
     case 'baslak':
-      document.write('Baslak');
+      baslak()
       break;
     case 'halvorhansen':
       halvorhansen();
@@ -47,7 +50,7 @@ function handleSubdomain() {
 
 function service() {
   console.log('Rendering service page');
-  title()
+  title();
   menu.show();
 }
 
@@ -78,6 +81,7 @@ function handleLanding() {
 
 function testWithSubdomain(subdomain) {
   if (doesSubdomainExist(subdomain)) {
+    document.body.replaceChildren();
     renderSubdomainContent(subdomain);
     console.log('Subdomain exists and was rendered');
   } else {

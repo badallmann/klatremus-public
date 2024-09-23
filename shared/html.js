@@ -7,35 +7,45 @@ export const html = {
   // Custom
   create(tagName, attributes = {}, nodes = []) {
     const element = document.createElement(tagName);
-
+  
+    // Set the attributes
     for (const [key, value] of Object.entries(attributes)) {
       element.setAttribute(key, value);
     }
-
+  
+    // Function to append nodes
     function appendNodes(nodes) {
-      for (const node of nodes) {
-        if (typeof node === 'string') {
-          // If the node is a string, create a text node
-          element.appendChild(document.createTextNode(node));
-        } else if (node instanceof Node) {
-          // If the node is a Node object, append it directly
-          element.appendChild(node);
-        } else if (Array.isArray(node)) {
-          // If the node is an array, recursively process it
-          appendNodes(node);
-        } else {
-          // Unsupported node type
-          console.warn('Unsupported node type:', node);
+      if (typeof nodes === 'string') {
+        // If the node is a single string, create a single text node
+        element.appendChild(document.createTextNode(nodes));
+      } else if (Array.isArray(nodes)) {
+        // If it's an array, process each item
+        for (const node of nodes) {
+          if (typeof node === 'string') {
+            element.appendChild(document.createTextNode(node));
+          } else if (node instanceof Node) {
+            element.appendChild(node);
+          } else if (Array.isArray(node)) {
+            // If the node is an array, recursively process it
+            appendNodes(node);
+          } else {
+            console.warn('Unsupported node type:', node);
+          }
         }
+      } else {
+        console.warn('Unsupported node type:', nodes);
       }
     }
-
+  
     appendNodes(nodes);
-
+  
     return element;
   },
 
   // Quick typing
+  h1(...nodes) {
+    return create('h1', {}, nodes);
+  },
   br(count = 1) {
     if (count === 1) {
       return create('br');
@@ -51,6 +61,12 @@ export const html = {
   },
   strong(...nodes) {
     return create('strong', {}, nodes);
+  },
+
+
+  // Layout
+  div(...nodes) {
+    return this.create('div', {}, nodes);
   },
 
 

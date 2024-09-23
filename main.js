@@ -12,6 +12,9 @@ window.onload = function() {
     }
   `);
   init();
+  setTimeout(() => {
+    testWithSubdomain('baslak')
+  }, 0);
 }
 
 window.testWithSubdomain = testWithSubdomain;
